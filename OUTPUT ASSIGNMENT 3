@@ -1,0 +1,73 @@
+Please enter the date of month below
+Date	: 2
+Month	: 3
+Year	: 2015
+Date today: 2.3.2015
+
+		😄Fruits available now😄
+1. Apple🍎	
+2. Anggur🍇	
+3. Lain"	
+
+🤑This system will check the price of fruit by entering the name of the fruit💰
+
+Enter N to stop checking fruit details	: N
+
+		😄Ready to take order😄
+
+Proceed if you want to order(Y/N)	: Y
+
+Enter the number of item(s) purchased (Only below 3): 3
+What is your first order		: Apple
+Fruit price per kilogram		: RM10
+Total Kilogram for your first item (KG): 5
+
+What is your second order		: Anggur
+Fruit price per kilogram		: RM8
+Total Kilogram for your second item (KG): 3
+
+What is your third order		: Ain
+Fruit price per kilogram		: RM15
+Total Kilogram for your third item (KG)	: 1
+
+Total fruit price : RM89.0
+Do you want to claim your voucher(Y/N): Y
+
+Enter your voucher code here: 1101
+You've claimed your 8 percent voucher
+Your Total fruit price is: RM81.88
+
+Please enter Y to proceed with the delivery: Y
+Enter the delivery location	: Kg Bubul
+Location distance		: 8KM
+Delivery fee to Kg Bubul	: RM8
+
+:- Total payment cost will be RM89.88
+			Thank you for purchasing with us.
+
+Fruit resistant in:
+["RTP", "Refrigerator, Freezer", "RTP/Refrigerator", "RTP/Freezer", "Refrigerator/Freezer", "RTP/Refrigerator/Freezer"] condition
+
+Do you want to check the resistance of the fruits received(Y/N)?: Y
+System to check the resistance of the fruits received
+
+Enter the fruit name or code: Apple
+
+
+Enter the fruit storage method(RTP/Refrigerator/Freezer): RTP
+Fruit resistance at room temperature (day): 5
+Fruit durability to date: 10.12.2021
+
+
+Enter Y to claim your voucher here: Y
+Send your spoiled fruits to our marchandise and get up to 5 percent off from SDN for every purchase you made with us.
+Please enter the total weight of your spoiled fruit: 1800
+
+You just got a 8% voucher code
+Use the code below for your next purchase with us
+1111
+
+
+
+Thank you for your contribution
+Have a nice day
