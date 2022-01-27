@@ -48,17 +48,12 @@ public class One4 {
 
 // emoji
 	static String satu = "😄";
-	String dua = "😆";
-	String tiga = "🥰";
-	String empat = "🤗";
-	String apple = "🍎";
-	String Anggur = "🍇";
 
 	static Scanner input = new Scanner(System.in);
 
 	public static void main(String[] args) {
 
-	// start program
+		// start program
 		tarikh();
 		listbuah();
 		checkharga();
@@ -86,7 +81,8 @@ public class One4 {
 
 		System.out.println("Date today: " + tarikh2);
 	}
-	//array
+
+	// array
 	public static void listbuah() {
 
 		System.out.println("");
@@ -126,6 +122,7 @@ public class One4 {
 				fruitprice = 15;
 				System.out.printf("Fruit price per kilogram\t: " + "RM" + fruitprice + "\n");
 				System.out.print("Fruit code is\t\t\t: xxxxxx\n");
+				System.out.println("This item is preorder");
 
 			}
 			System.out.print("\nEnter N to stop checking the price of fruit\t: ");
@@ -173,6 +170,7 @@ public class One4 {
 				} else {
 					fruitprice = 15;
 					System.out.printf("Fruit price per kilogram\t\t: " + "RM" + fruitprice + "\n");
+					System.out.println("preorder");
 					// System.out.print("\n");
 				}
 
@@ -202,6 +200,7 @@ public class One4 {
 				} else {
 					fruitprice = 15;
 					System.out.printf("Fruit price per kilogram\t\t: " + "RM" + fruitprice + "\n");
+					System.out.println("preorder");
 					// System.out.print("\n");
 				}
 
@@ -227,6 +226,7 @@ public class One4 {
 				} else {
 					fruitprice = 15;
 					System.out.printf("Fruit price per kilogram\t\t: " + "RM" + fruitprice + "\n");
+					System.out.println("preorder");
 					// System.out.print("\n");
 				}
 
@@ -256,6 +256,7 @@ public class One4 {
 				} else {
 					fruitprice = 15;
 					System.out.printf("Fruit price per kilogram\t\t: " + "RM" + fruitprice + "\n");
+					System.out.println("preorder");
 					// System.out.print("\n");
 				}
 
@@ -280,6 +281,7 @@ public class One4 {
 				} else {
 					fruitprice = 15;
 					System.out.printf("Fruit price per kilogram\t\t: " + "RM" + fruitprice + "\n");
+					System.out.println("preorder");
 					// System.out.print("\n");
 				}
 
@@ -305,6 +307,7 @@ public class One4 {
 				} else {
 					fruitprice = 15;
 					System.out.printf("Fruit price per kilogram\t\t: " + "RM" + fruitprice + "\n");
+					System.out.println("preorder");
 					// System.out.print("\n");
 				}
 
@@ -316,6 +319,8 @@ public class One4 {
 				System.out.println("\nTotal fruit price : " + "RM" + totalorder);
 				break;
 
+			default: 
+				System.out.println("Your order is not valid");
 			}
 
 			// Stop system taking order
@@ -392,6 +397,8 @@ public class One4 {
 				}
 				// Stop proceed location
 				break;
+				
+				
 
 			}
 			// Stop proceed Delivery
@@ -413,11 +420,12 @@ public class One4 {
 
 	public static void resistancecondition() {
 		// call method return_array that returns array
-				String[] str_Array = return_Array();
-				System.out.println("Fruit resistant in:\n" + Arrays.toString(str_Array) + " condition\n");
+		String[] str_Array = return_Array();
+		System.out.println("Fruit resistant in:\n" + Arrays.toString(str_Array) + " condition\n");
 
 	}
-	//passing array to method
+
+	// passing array to method
 	public static String[] return_Array() {
 		// define string array
 		String[] ret_Array = { "\"RTP\"", "\"Refrigerator", "Freezer\"", "\"RTP/Refrigerator\"", "\"RTP/Freezer\"",
@@ -425,15 +433,14 @@ public class One4 {
 		// return string array
 		return ret_Array;
 	}
-	
+
 	public static void resistance() {
 
 		// Fruit Resistance
 		System.out.print("Do you want to check the resistance of the fruits received(Y/N)?: ");
 		checkFruitResistance = input.next().charAt(0);
 
-		switch (checkFruitResistance) {
-		case 'Y':
+		while (checkFruitResistance != 'N') {
 
 			// System check the fruit details
 			System.out.println("System to check the resistance of the fruits received\n");
@@ -453,7 +460,7 @@ public class One4 {
 				// Check details
 
 				// suhu bilik
-				System.out.println("\n");
+				
 				System.out.print("Enter the fruit storage method(RTP/Refrigerator/Freezer): ");
 
 				suhubilik = input.next();
@@ -523,7 +530,7 @@ public class One4 {
 				// Check details
 
 				// suhu bilik
-				System.out.println("\n");
+				
 				System.out.print("Enter the fruit storage method(RTP/Refrigerator/Freezer): ");
 
 				suhubilik = input.next();
@@ -587,20 +594,19 @@ public class One4 {
 				}
 				break;
 			// no more case anggur apple
-			case "xxxxxx":
+
+			default:
 				System.out.println("Please reach our staff");
 				break;
 			}
 			// Stop System check the fruit details
 
-			System.out.println("\n");
+			System.out.println("");
+			System.out.print("Do you want to check the resistance of the fruits received again(Y/N)?: ");
+			checkFruitResistance = input.next().charAt(0);
+			// Stop system check fruit resistance
 
-			break;
-
-		}
-		// Stop system check fruit resistance
-
-	}
+		}}
 
 	public static void discount() {
 		// claim coupon discount
@@ -614,7 +620,7 @@ public class One4 {
 			System.out.println(
 					"Send your spoiled fruits to our marchandise and get up to 5 percent off from SDN for every purchase you made with us.");
 
-			System.out.print("Please enter the total weight of your spoiled fruit: ");
+			System.out.print("Please enter the total weight of your spoiled fruit(gram): ");
 			gram = input.nextInt();
 			System.out.println("");
 
@@ -625,18 +631,18 @@ public class One4 {
 			} else if (gram >= 500 && gram <= 999) {
 				System.out.println("You just got a 5% voucher code");
 				System.out.println("Use the code below for your next purchase with us");
-				System.out.println("1101");
+				System.out.println("1111");
 			} else {
 				System.out.println("You just got a 8% voucher code");
 				System.out.println("Use the code below for your next purchase with us");
-				System.out.println("1111");
+				System.out.println("1101");
 
 			}
 
 			System.out.println("\n\n\nThank you for your contribution");
 			break;
 
-		case 'N':
+		default :
 			System.out.println("\n\n\nThank You for using our service");
 
 		}
